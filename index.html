@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Forum louloudoudou.com - Fomulaire d'adhesion</title>
+    
+    <!-- Inclusion de la feuille de style Bootstrap CSS version 3.3.7 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="monStyle.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid col-xs-8 col-xs-offset-2 col-lg-6 col-lg-offset-3 white">
+        <form action="action.php" method="get">
+            <div class="row">
+                <h1 class="col-xs-12"> Formulaire d'adhésion </h1>
+                <fieldset class="form-group col-xs-12">
+                    <div class="form-group col-xs-12 col-sm-6">
+                        <label>Prénom</label>
+                        <input type="text" class="form-control" id="prenom_form" name="prenom" autofocus required/>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6">
+                        <label >Nom</label>
+                        <input type="text" class="form-control" id="nom_form" name="nom" required/>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6">
+                        <label>Login</label>
+                        <input type="text" class="form-control" id="login_form" name="login" required/>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6">
+                        <label>Mot de passe</label>
+                        <input type="password" class="form-control" id="mdp_form" name="mdp" required/>
+                    </div>
+
+                    
+                    <div class="form-group col-xs-12 col-sm-5">
+                        <label>Date de Naissance</label>
+                        <input type="date" class="form-control" id="date_form" name="ddn" required min="1900-01-01" max="2017-12-31"/>
+                    </div>
+
+                    <div class="form-group col-xs-12 col-sm-7">
+                        <label>Courriel</label>
+                        <input type="email" class="form-control" id="courriel_form" name="mail"  required/>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group col-xs-12">
+                    <legend>Veuillez sélectionner les provinces du Canada que vous avez visité :</legend>
+                    <div>
+                        <input type="checkbox" class="form-box" name="check1" value="Alberta" id="Alberta"/>
+                        <label for="Alberta">Alberta</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="form-box" name="check2" value="Colombie-Britanique" id="Colombie-Britanique"/>
+                        <label for="Colombie-Britanique">Colombie-Britanique</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="form-box" name="check3" value="Ile-du-Prince-Edouard" id="Ile-du-Prince-Edouard"/>
+                        <label for="Ile-du-Prince-Edouard">Ile-du-Prince-Edouard</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="form-box" name="check4" value="Manitoba" id="Manitoba"/>
+                        <label for="Manitoba">Manitoba</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="form-box" name="check5" value="Nouveau-Brunswick" id="Nouveau-Brunswick"/>
+                        <label for="Nouveau-Brunswick">Nouveau-Brunswick</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="form-box" name="check6" value="Nouvelle-Ecosse" id="Nouvelle-Ecosse"/>
+                        <label for="Nouvelle-Ecosse">Nouvelle-Ecosse</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="form-box" name="check7" value="Ontario" id="Ontario"/>
+                        <label for="Ontario">Ontario</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="form-box" name="check8" value="Quebec" id="Quebec"/>
+                        <label for="Quebec">Quebec</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="form-box" name="check9" value="Saskatchewan" id="Saskatchewan"/>
+                        <label for="Saskatchewan">Saskatchewan</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="form-box" name="check10" value="Terre-Neuve-et-Labrador" id="Terre-Neuve-et-Labrador"/>
+                        <label for="Terre-Neuve-et-Labrador">Terre-Neuve-et-Labrador</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-group col-xs-12">
+                    <legend>Veuillez saisir votre adresse : (optionnel)</legend>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <label class="block">n°</label>
+                        <input type="text" class="block" name="n"/>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <label class="block">rue</label>
+                        <input type="text" class="block" name="rue"/>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <label class="block">code postal</label>
+                        <input type="text" class="block" name="cp"/>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <label class="block">ville</label>
+                        <input type="text" class="block" name="ville"/>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <label class="block">pays</label>
+                        <input type="text" class="block" name="pays"/>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <label class="block">province</label>
+                        <input type="text" class="block" name="province"/>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-group col-xs-12">
+                    <legend>Veuillez selectionner votre navigateur favori :</legend>
+                    <div>
+                        <input type="radio" class="form-box" name="nav" value="Chrome" id="Chrome"/>
+                        <label for="Chrome">Chrome</label>
+                    </div>
+                    <div>
+                        <input type="radio" class="form-box" name="nav" value="IE" id="IE"/>
+                        <label for="IE">Internet Explorer</label>
+                    </div>
+                    <div>
+                        <input type="radio" class="form-box" name="nav" value="Safari" id="Safari"/>
+                        <label for="Safari">Safari</label>
+                    </div>
+                    <div>
+                        <input type="radio" class="form-box" name="nav" value="Opera" id="Opera"/>
+                        <label for="Opera">Opera</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-group col-xs-12">
+                    <legend>Veuillez prouver que vous n'etes pas un robot</legend>
+                    <input type="checkbox" class="form-box" name="robot" value="robot" id="robot" required/>
+                    <label for="robot">Je ne suis pas un robot</label>
+                </fieldset>
+
+                <div class="form-group col-xs-12">
+                    <input type="submit" value="Valider le formulaire">
+                    <button type="button" onclick="RAZ()" id="button2">Vider les champs</button>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+</body>
+
+</html>
